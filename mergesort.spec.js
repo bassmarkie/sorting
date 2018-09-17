@@ -3,7 +3,7 @@ describe('Split Array function', function() {
     expect(split([1, 2])).toEqual([[1], [2]])
   });
   it('is able to split a long array into single entries', function() {
-    expect(split([1, 2, 3, 4])).toEqual([[[1], [2]], [[3], [4]]])
+    expect(split([4, 2, 3, 1])).toEqual([[4, 2], [3, 1]])
   });
 });
 
@@ -13,9 +13,14 @@ describe('Merge Function', function() {
     expect(merge([1], [2])).toEqual([1, 2])
   });
   it('is able to merge two separate arrays into one', function() {
-    expect(merge([[[1], [2]], [[3], [4]]])).toEqual([1, 2, 3, 4])
+    expect(merge([1, 5], [2, 4])).toEqual([1, 2, 4, 5])
   });
 
+});
 
+describe('MergeSort Function', function() {
+  it('sorts and merges an array', function() {
+    expect(mergeSort([4,2,3,6])).toEqual([2,3,4,6])
+  });
 
 });
