@@ -20,7 +20,9 @@ describe('Merge Function', function() {
 
 describe('MergeSort Function', function() {
   it('sorts and merges an array', function() {
-    expect(mergeSort([4,2,3,6])).toEqual([2,3,4,6])
+    expect(mergeSort([7,2,3,6])).toEqual([2,3,6,7])
   });
-
+  it('sorts and merges an array', function() {
+    expect(mergeSort([34,26,301,6])).toEqual([6,26,34,301])
+  });
 });
